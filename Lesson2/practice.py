@@ -93,4 +93,4 @@ def count_words(s:str):
     arr = s.strip().split()
     return len(arr)  # Trả về độ dài của danh sách từ
 
-print("Số lượng từ trong chuỗi là:", count_words(sentence))
+print("Số lượng từ trong chuỗi là:", count_words(sentence)) 
