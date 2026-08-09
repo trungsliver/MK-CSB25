@@ -51,3 +51,18 @@ class PlayerDatabase:
                             worth = player_data['worth'])
             new_players.append(player)
         self.players_list = new_players
+
+    # Chuyển từ object => dictionary / json
+    def object_to_dict(self):
+        json_data = list()
+        # Duyệt danh sách object users_list
+        for player_data in self.players_list:
+            # user_data.__dict__: chuyển dạng object sang dictionary
+            json_data.append(player_data.__dict__)
+        return json_data
+
+    # Hiển thị toàn bộ thông tin
+    def show_all(self):
+        for player in self.players_list:
+            # display_info(): phương thức của class User
+            player.show_info()
