@@ -1,0 +1,9 @@
+Student: Minh Anh
+  Subject: Toán, Grade: 8.0
+  Subject: Văn, Grade: 7.0
+  Average Score: 7.5
+
+Student: Đức Trung
+  Subject: ANh, Grade: 9.0
+  Average Score: 9.0
+
