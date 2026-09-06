@@ -49,3 +49,21 @@ print("\nKết quả trung bình sau 5 lần thử nghiệm:")
 print(f"Thời gian trung bình Bubble Sort: {sum_bubble / n} giây")
 print(f"Thời gian trung bình Selection Sort: {sum_selection / n} giây")
 print(f"Thời gian trung bình Insertion Sort: {sum_insertion / n} giây")
+
+# Bài 2: Sắp xếp danh sách sản phẩm dạng dictionary (giá giảm dần)
+products = [
+    {"name": "Sữa", "price": 30},
+    {"name": "Bánh quy", "price": 20},
+    {"name": "Gạo", "price": 15},
+    {"name": "Dầu ăn", "price": 40},
+    {"name": "Nước mắm", "price": 25},
+    {"name": "Đường", "price": 18},
+    {"name": "Muối", "price": 10},
+    {"name": "Mì tôm", "price": 12},
+    {"name": "Trứng", "price": 35},
+    {"name": "Cà phê", "price": 50},
+    {"name": "Trà", "price": 28},
+    {"name": "Nước ngọt", "price": 22},
+    {"name": "Bánh mì", "price": 15},
+    {"name": "Xúc xích", "price": 45},
+]
