@@ -19,7 +19,7 @@ def measure_time(sort_function, array):
     return end_time - start_time
 
 # Khởi tạo danh sách lớn
-random_list = [random.randint(1, 20000000) for _ in range(10000)]
+random_list = [random.randint(1, 20000000) for _ in range(5000)]
 
 # Test 10 lần
 n = 10
@@ -67,3 +67,23 @@ products = [
     {"name": "Bánh mì", "price": 15},
     {"name": "Xúc xích", "price": 45},
 ]
+
+def selection_sort_products(products):
+    n = len(products)
+    for i in range(n - 1):
+
+        min_index = i
+
+        # Tìm sản phẩm có price nhỏ nhất
+        for j in range(i + 1, n):
+            if products[j]["price"] < products[min_index]["price"]:
+                min_index = j
+        
+        # Đổi chỗ 
+        products[i], products[min_index] = products[min_index], products[i]
+    return products
+# Sắp xếp sản phẩm theo giá giảm dần
+sorted_products = selection_sort_products(products)[::-1]
+print("\nDanh sách sản phẩm sau khi sắp xếp theo giá giảm dần:")
+for product in sorted_products:
+    print(f"Tên: {product['name']}, Giá: {product['price']}")
