@@ -1,0 +1,8 @@
+Quy tắc đặt tên folder cho CP2: [TenLop]_[HoTen]_CP2
+Ví dụ: CSB25_BuiDucTrung_CP2
+
+Các file có trong folder:
+- tracnghiem.txt (ghi các đáp án trắc nghiệm vào file này)
+- main.py (thực hành)
+
+Link đề bài: shorturl.at/zjgcG
